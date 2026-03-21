@@ -6,10 +6,10 @@ public class PlayerMove : MonoBehaviour
 {
     
     // Declarar variables
-    [SerializeField] private float VelocityX;
-    [SerializeField] private float jumpSpeed;
-    [SerializeField] private bool isGrounded;
-    [SerializeField] private Rigidbody2D rb;    
+    [SerializeField] private float VelocityX;           //Velocidad horizontal
+    [SerializeField] private float jumpSpeed;           //Velociad vertical
+    [SerializeField] private bool isGrounded;           //Booleano de si está en el piso el personaje
+    [SerializeField] private Rigidbody2D rb;            //Rigidbody
     [SerializeField] private InputAction jump;          //Evento de InputAction para brincar
     [SerializeField] private InputAction moveAction;    //Evento de InputAction para mover
     [SerializeField] private Animator anim;    //Controlador de animación
@@ -22,7 +22,6 @@ public class PlayerMove : MonoBehaviour
         VelocityX = 5f;
         jumpSpeed = 7f;
         isGrounded = true;
-
         
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();

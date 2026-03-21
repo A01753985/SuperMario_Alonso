@@ -1,0 +1,27 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/UI/menu.uss?fileID=7433441132597879392&amp;guid=33523b533beb35f44b84a6d902635890&amp;type=3#menu"/>
+    <ui:VisualElement name="Menu" style="flex-grow: 1;">
+        <ui:Label text="Tarea Unity" name="Titulo" class="titulo"/>
+        <ui:Button text="X" name="Salir" class="boton-salir"/>
+        <ui:VisualElement name="AyudaElement" class="boton-ayuda ayuda" style="flex-grow: 1;">
+            <ui:Label text="&#10;&#10;Mover con W/A/S/D o con ↑ ↓ → ←&#10;&#10;Presiona barra espaciadora para brincar&#10;&#10;Usa los botones de X para regresar o salir&#10;&#10;¡Diviertete!" name="TextoAyuda" class="texto"/>
+            <ui:Button text="X" name="SalirAyuda" class="boton-salir" style="bottom: 700px; left: 1250px; font-size: 60px; color: rgb(247, 219, 16);"/>
+        </ui:VisualElement>
+        <ui:Label text="Alonso García González (A01753985)" name="Nombre" parse-escape-sequences="true" class="nombre"/>
+        <ui:VisualElement name="Botones" class="botones" style="flex-grow: 1; width: 1200px; height: 300px; background-color: rgba(0, 0, 0, 0.35);">
+            <ui:Button text="Jugar" name="Jugar" enable-rich-text="true" class="boton-juego"/>
+            <ui:Button text="Ayuda" name="Ayuda" emoji-fallback-support="true" class="boton-juego"/>
+            <ui:Button text="Créditos" name="Creditos" class="boton-juego"/>
+        </ui:VisualElement>
+        <ui:Image source="project://database/Assets/Images/mario.png?fileID=2800000&amp;guid=66c6812cfced586498b20cbe6a4a0fc3&amp;type=3#mario" name="ImagenMario" style="position: absolute; top: 502px; left: 1428px; height: 361px; width: 396px;"/>
+        <ui:Image name="ImagenEstrella" source="project://database/Assets/Images/estrella.png?fileID=2800000&amp;guid=ff060acc658cebd4cb7946077ee8f39d&amp;type=3#estrella" style="position: absolute; top: 257px; left: 47px; height: 311px; width: 279px;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="CreditosElement" class="creditos" style="flex-grow: 1; position: absolute;">
+        <ui:Label text="Créditos" name="CreditosTitulo" emoji-fallback-support="true" class="titulo" style="width: 100%; color: rgb(190, 199, 48);"/>
+        <ui:Button text="X" name="SalirCreditos" class="boton-salir" style="bottom: 950px; left: 1700px; font-size: 60px; color: rgb(247, 219, 16);"/>
+        <ui:ScrollView name="CreditosScroll" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden" class="creditosScroll">
+            <ui:Label text="Autor: Alonso García González&#10;A01753985&#10;&#10;Construcción de software y toma de decisiones &#10;(Gpo 402)&#10;&#10;Profesor: Roberto Martínez Román&#10;&#10;21/03/26&#10;&#10;Hecho con Unity&#10;&#10;&#10;&#10;&#10;&#10;&#10;" name="CreditosTexto" class="texto" style="white-space: pre-wrap;"/>
+            <ui:Label text="Autor: Alonso García González&#10;A01753985&#10;&#10;Construcción de software y toma de decisiones &#10;(Gpo 402)&#10;&#10;Profesor: Roberto Martínez Román&#10;&#10;21/03/26&#10;&#10;Hecho con Unity&#10;&#10;&#10;&#10;&#10;&#10;&#10;" name="CreditosTextoCopia" class="texto" style="white-space: pre-wrap;"/>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

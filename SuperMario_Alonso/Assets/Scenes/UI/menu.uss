@@ -1,0 +1,131 @@
+:root {
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-content: center;
+}
+
+.titulo {
+    align-self: center;
+    width: 80%;
+    font-size: 72px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.35);
+    border-top-width: 40px;
+    border-right-width: 40px;
+    border-bottom-width: 40px;
+    border-left-width: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.botones {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    align-content: auto;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 300px;
+    border-top-width: 40px;
+    border-right-width: 40px;
+    border-bottom-width: 40px;
+    border-left-width: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+}
+
+.boton-juego {
+    font-size: 40px;
+    -unity-text-align: middle-center;
+    width: 300px;
+    height: 150px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    background-image: url("project://database/Assets/Scenes/UI/orangeGradient.jpg?fileID=2800000&guid=d023bac5ff3596246b90e5fd51cdb86f&type=3#orangeGradient");
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition-property: scale;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+.boton-juego:hover {
+    scale: 1.15 1.15;
+}
+
+.boton-salir {
+    position: absolute;
+    right: auto;
+    top: auto;
+    width: 100px;
+    height: 100px;
+    -unity-text-align: middle-center;
+    font-size: 80px;
+    color: rgb(251, 251, 251);
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 20px;
+    bottom: 20px;
+    -unity-font-style: bold;
+}
+
+.nombre {
+    bottom: 10px;
+    right: 0;
+    font-size: 50px;
+    -unity-font-style: italic;
+    -unity-text-align: middle-left;
+    color: rgb(255, 255, 255);
+    left: 1000px;
+    position: absolute;
+}
+
+.ayuda {
+    left: 260px;
+    right: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    bottom: 0;
+    top: 0;
+    -unity-text-align: middle-center;
+    width: 1400px;
+    height: 1200px;
+}
+
+.texto {
+    font-size: 60px;
+    -unity-text-align: upper-center;
+    color: rgb(255, 255, 255);
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.creditos {
+    position: absolute;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgb(82, 82, 82);
+    display: none;
+}
+
+.creditosScroll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
